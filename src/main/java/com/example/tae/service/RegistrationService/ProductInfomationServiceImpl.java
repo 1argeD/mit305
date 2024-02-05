@@ -125,7 +125,7 @@ public class ProductInfomationServiceImpl implements ProductInfomationService {
                     Random random = new Random();
                     return ProductForProject.builder()
                             .productCode(productInformationRegistration)
-                            .productCodeCount(random.nextInt(1,100))
+                            .productCodeCount(random.nextInt(100)+1)
                             .projectID(projectId)
                             .build();
                 }
